@@ -25,10 +25,7 @@ fal.config({
 
 const models = [
  
-  {
-    value: 'fast-lightning-sdxl',
-    label: 'Stable Diffusion',
-  }
+  
 ]
 
 export default function Home() {
@@ -64,7 +61,7 @@ export default function Home() {
   useEffect(() => { setIsClient(true) }, [])
 
   const [model, setModel] = useState({
-    value: 'stable-cascade',
+    value: 'fast-lightning-sdxl',
     label: 'Stable Cascade'
   })
 
@@ -535,7 +532,7 @@ function fetchModelParams(model: string, input:string, url?: string) {
     case 'stable-cascade':
       return {
         type: 'subscribe',
-        model_name: 'fal-ai/stable-cascade',
+        model_name: 'fal-ai/fast-lightning-sdxl',
         inputs: {
           input: {
             prompt: input
@@ -545,7 +542,7 @@ function fetchModelParams(model: string, input:string, url?: string) {
     case 'stable-video-diffusion':
       return {
         type: 'subscribe',
-        model_name: 'fal-ai/fast-svd',
+        model_name: 'fal-ai/fast-lightning-sdxl',
         inputs: {
           input: {
             image_url: url
@@ -555,7 +552,7 @@ function fetchModelParams(model: string, input:string, url?: string) {
     case 'stable-diffusion':
       return {
         type: 'subscribe',
-        model_name: 'fal-ai/fast-sdxl',
+        model_name: 'fal-ai/fast-lightning-sdxl',
         inputs: {
           input: {
             prompt: input
