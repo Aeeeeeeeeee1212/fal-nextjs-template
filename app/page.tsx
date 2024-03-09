@@ -26,7 +26,7 @@ fal.config({
 const models = [
  
   {
-    value: 'stable-diffusion',
+    value: 'fast-lightning-sdxl',
     label: 'Stable Diffusion',
   }
 ]
