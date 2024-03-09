@@ -24,45 +24,10 @@ fal.config({
 })
 
 const models = [
-  {
-    value: 'stable-cascade',
-    label: 'Stable Cascade',
-  },
+ 
   {
     value: 'stable-diffusion',
     label: 'Stable Diffusion',
-  },
-  {
-    value: 'stable-video-diffusion',
-    label: 'Stable Video Diffusion'
-  },
-  {
-    value: 'fooocus',
-    label: 'Fooocus',
-  },
-  {
-    value: 'face-adapter',
-    label: 'Face Adapter'
-  },
-  {
-    value: 'remove-background',
-    label: 'Remove Background'
-  },
-  {
-    value: 'illusion-diffusion',
-    label: 'Illusion Diffusion'
-  },
-  {
-    value: 'animate',
-    label: 'Animate',
-  },
-  {
-    value: 'fast-animate',
-    label: 'Fast Animate'
-  },
-  {
-    value: 'real-time',
-    label: 'Real Time',
   }
 ]
 
